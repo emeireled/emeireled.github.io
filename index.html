@@ -1,7 +1,8 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <title> Movement to Music</title>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">    
+    	<meta charset="utf-8">
+      	<title> Movement to Music</title>
         <link rel="stylesheet" href="MovementMusic_files/bootstrap.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="MovementMusic_files/styles.css">
     </head>
@@ -15,7 +16,6 @@
 
         <div class="container text-center border my-5 p-5">
             <h3> Dataset </h3>
-            <p class="lead"> 22/04/2020 </p>
             <p class="text-justify">
                 Our dataset is composed with 18 youtube videos, with a fixed camera and a single person appearence through the whole video. Their configurations are 1080p and 30fps.
             </p>
@@ -34,6 +34,9 @@
                 <p class="text-justify">
                 	The second instrument will play a music based on the same sacle but other random initial note from it. The variation from the initial note to the next is given by the quantity of motion, we derivate the quantity of motion feature to see if we should go higher or lower in the scale. At last, contraction index will give the duration of each note.
             	</p>
+            	<video width="320" height="240" controls>
+  					<source src="MovementMusic_files/freestyle_dance_R1.mp4" type="video/mp4">
+				</video>
             </div>
             <div class="my-5 px-3">
             	<h2> Second Approach - Specific Motion </h2>
@@ -43,16 +46,22 @@
             	<p class="text-justify">
             		In this implementation we focus only on the movement from above the waist and from the movement bellow and including the waist. This aproach only uses the speed, aceleration and fluidity of each set of body joints. There so, only uses the aproach of the first implementation for the first instrument, in each of our two sheets. The first instrument will play based on the movement from above the waist, and the second will play what it sees from the waist down.
             	</p>
+            	<video width="320" height="240" controls>
+  					<source src="MovementMusic_files/freestyle_dance_R2.mp4" type="video/mp4">
+				</video>
             </div>
             <div class="my-5 px-3">
             	<h2> Third Approach - Mix Motion </h2>
                 <p class="text-justify">
                 	This approach is a mix of the first two. It will receive both aproaches, combined them and remove randomly half of the notes.
             	</p>
+            	<video width="320" height="240" controls>
+  					<source src="MovementMusic_files/freestyle_dance_G1.mp4" type="video/mp4">
+				</video>
             </div>
         </div>
-    <script src="SoundMusic_ficheiros/jquery-3.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="SoundMusic_ficheiros/popper.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="SoundMusic_ficheiros/bootstrap.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-</body></html>
+    	<script src="SoundMusic_ficheiros/jquery-3.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    	<script src="SoundMusic_ficheiros/popper.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    	<script src="SoundMusic_ficheiros/bootstrap.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
